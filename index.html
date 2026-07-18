@@ -43,11 +43,8 @@ ASSETS for landing page
 <!--SKY & CAMERA-->    
   	<a-sky color="#425D70"></a-sky>
 
-    <a-entity position="0 0 -5" rotation="0 0 0">
-        <a-camera id="camera" look-controls wasd-controls>
-          <a-ring cursor="fuse:false" raycaster="objects: .collidable; far: 3.5; near: 1; interval: 1000" class="reticle-cursor" opacity="0" color="#E812CE"  radius-outer="0.01" radius-inner="0.008" position="0 0 -1">
-          </a-ring>
-        </a-camera>
+    <a-entity camera="active: true" look-controls wasd-controls position="0 1.6 0" data-aframe-default-camera>
+          <a-entity cursor raycaster="rayOrigin: mouse; mouseCursorStylesEnabled: true; far: 20; interval: 1000; objects: .clickable"></a-entity>
     </a-entity>
 
 
@@ -84,25 +81,14 @@ BIO AND INFO: 2d page? on wall near entrance?
 Links to Galleries
 ...................................-->
 
-<!--Traversable link to gallery page: baskets-->
-<a-entity class="collidable" position="0 0 -1" rotation="0 0 0">
-	<a-entity bmfont-text="text: Baskets; align: center; color: #ffffff; width: 320;" position="-1 1.5 0" rotation="0 0 0" scale="0.5 0.5 0.5"></a-entity>
-	<a-box href="si-pages/baskets-gallery.html" material="src: #placeholder-baskets" depth="0.2" height="1" width="1" position="0 1 0"></a-box>
-</a-entity>
-
 
 <!--Traversable link to gallery page: hair-textiles-->
-<a-entity class="collidable" position="0 0 -1" rotation="0 0 0">
+<a-entity class="clickable" position="0 0 -1" rotation="0 0 0" animation__mouseenter="property: scale; startEvents: mouseenter; easing: easeInCubic; dur: 500; to: 1.2 1.2 1.2" animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: 1 1 1">
 	<a-entity bmfont-text="text: Hair Textiles; align: center; color: #ffffff; width: 320;" position="0 1.5 0" rotation="0 0 0" scale="0.5 0.5 0.5"></a-entity>
 	<a-box href="si-pages/baskets-gallery.html" material="src: #placeholder-hair-textiles" depth="0.2" height="1" width="1" position="0 1 0"></a-box>
 </a-entity>
 
 
-<!--Traversable link to gallery page: paintings-->
-<a-entity class="collidable" position="0 0 -1" rotation="0 0 0">
-	<a-entity bmfont-text="text: Paintings; align: center; color: #ffffff; width: 320;" position="1 1.5 0" rotation="0 0 0" scale="0.5 0.5 0.5"></a-entity>
-	<a-box href="si-pages/baskets-gallery.html" material="src: #placeholder-paintings" depth="0.2" height="1" width="1" position="0 1 0"></a-box>
-</a-entity>
 
 
     </a-scene>
