@@ -35,26 +35,26 @@ ASSETS for landing page
 
     	<!-- gallery link images -->
     	<img id="placeholder-baskets" src="img/ui/placeholder-baskets.png">
-    	<img id="placeholder-baskets" src="img/ui/placeholder-hair-textiles.png">
-    	<img id="placeholder-baskets" src="img/ui/placeholder-paintings.png">
+    	<img id="placeholder-hair-textiles" src="img/ui/placeholder-hair-textiles.png">
+    	<img id="placeholder-paintings" src="img/ui/placeholder-paintings.png">
 
     </a-assets>
 
 <!--SKY & CAMERA-->    
   	<a-sky color="#425D70"></a-sky>
 
-    <a-entity position="0 0 -3" rotation="0 0 0">
+    <a-entity position="0 0 -5" rotation="0 0 0">
         <a-camera id="camera" look-controls wasd-controls>
-          <a-ring cursor="fuse:false" raycaster="objects: .collidable; far: 4.5; near: 1; interval: 1000" class="reticle-cursor" opacity="0" color="#E812CE"  radius-outer="0.01" radius-inner="0.008" position="0 0 -1">
+          <a-ring cursor="fuse:false" raycaster="objects: .collidable; far: 3.5; near: 1; interval: 1000" class="reticle-cursor" opacity="0" color="#E812CE"  radius-outer="0.01" radius-inner="0.008" position="0 0 -1">
           </a-ring>
         </a-camera>
     </a-entity>
 
 
 <!--LIGHTS-->
-<!--<a-entity light="type: point; intensity: 1.5; distance: 35; decay: 2" position="0 15 -3"></a-entity>-->
+<a-entity light="type: point; intensity: 1.5; distance: 35; decay: 2" position="0 15 -3"></a-entity>
 
-<a-entity light="type: ambient; color: #CCC; intensity: 0.2"></a-entity>
+<a-entity light="type: ambient; color: #CCC; intensity: 0.1"></a-entity>
 
 <!--GROUND PLANE-->
 <a-plane color="#276B46" height="100" width="100" rotation="-90 0 0" position="0 -0.6 0"></a-plane>
@@ -80,15 +80,6 @@ BIO AND INFO: 2d page? on wall near entrance?
 <a-entity bmfont-text="text: Under Construction...; align: center; color: #ffffff; width: 320;" position="-0.4 0.5 -3" scale="0.5 0.5 0.5" rotation="-90 0 0"></a-entity>
 
 
-
-
-<!--image of art piece example-->
-<a-entity class="rotate-art" position="0 0 -3.5" rotation="0 -30 0">
-	<a-image src="#art-1" width="1" height="1" position="0 1.5 -4"></a-image>
-	<a-entity bmfont-text="text: Soft VHS Plants vaccuformed plastic, VHS tape,  2007; align: center; color: #ffffff; width: 320;" position="-0.4 0.6 -4" scale="0.5 0.5 0.5"></a-entity>
-</a-entity>
-
-
 <!--...................................
 Links to Galleries
 ...................................-->
@@ -96,21 +87,21 @@ Links to Galleries
 <!--Traversable link to gallery page: baskets-->
 <a-entity class="collidable" position="0 0 -1" rotation="0 0 0">
 	<a-entity bmfont-text="text: Baskets; align: center; color: #ffffff; width: 320;" position="-0.55 1.5 -2" rotation="0 0 0" scale="0.5 0.5 0.5"></a-entity>
-	<a-box href="si-pages/baskets-gallery.html" material="src: #carnival-globe-trees" depth="0.2" height="2" width="2" position="0 1 -6"></a-box>
+	<a-box href="si-pages/baskets-gallery.html" material="src: #placeholder-baskets" depth="0.2" height="2" width="2" position="0 1 -6"></a-box>
 </a-entity>
 
 
 <!--Traversable link to gallery page: hair-textiles-->
 <a-entity class="collidable" position="0 0 -1" rotation="0 0 0">
-	<a-entity bmfont-text="text: Baskets; align: center; color: #ffffff; width: 320;" position="-0.55 1.5 -2" rotation="0 0 0" scale="0.5 0.5 0.5"></a-entity>
-	<a-box href="si-pages/baskets-gallery.html" material="src: #carnival-globe-trees" depth="0.2" height="2" width="2" position="0 1 -6"></a-box>
+	<a-entity bmfont-text="text: Hair Textiles; align: center; color: #ffffff; width: 320;" position="0 1.5 -2" rotation="0 0 0" scale="0.5 0.5 0.5"></a-entity>
+	<a-box href="si-pages/baskets-gallery.html" material="src: #placeholder-hair-textiles" depth="0.2" height="2" width="2" position="0 1 -6"></a-box>
 </a-entity>
 
 
 <!--Traversable link to gallery page: paintings-->
 <a-entity class="collidable" position="0 0 -1" rotation="0 0 0">
-	<a-entity bmfont-text="text: Baskets; align: center; color: #ffffff; width: 320;" position="-0.55 1.5 -2" rotation="0 0 0" scale="0.5 0.5 0.5"></a-entity>
-	<a-box href="si-pages/baskets-gallery.html" material="src: #carnival-globe-trees" depth="0.2" height="2" width="2" position="0 1 -6"></a-box>
+	<a-entity bmfont-text="text: Paintings; align: center; color: #ffffff; width: 320;" position="0.55 1.5 -2" rotation="0 0 0" scale="0.5 0.5 0.5"></a-entity>
+	<a-box href="si-pages/baskets-gallery.html" material="src: #placeholder-paintings" depth="0.2" height="2" width="2" position="0 1 -6"></a-box>
 </a-entity>
 
 
