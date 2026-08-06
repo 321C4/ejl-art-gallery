@@ -13,7 +13,7 @@
     <link rel="prefetch" href="index.html">
 
 
-     <title>EJL Baskets</title>
+     <title>Baskets</title>
     <script src="js/aframe.min.js"></script>
     <script src="js/aframe-bmfont-text-component.min.js"></script>
     <script src="js/aframe-hyperlink.js"></script>
@@ -27,13 +27,13 @@ ASSETS for gallery
 ...................-->
     <a-assets>
     	<!--gallery model-->
-    	<a-asset-item id="galleries" src="models/galleries6.dae"></a-asset-item>
+    	<a-asset-item id="galleries" src="models/ejl-octagon.gallery.glb"></a-asset-item>
 
     	<!--art image example syntax-->
-    	<img id="art-1" src="img/art/2007knit-vhs.png">
+    	<img id="art-1" src="img/old-art-pieces/2007knit-vhs.png">
 
     	<!-- return home link image -->
-    	<img id="placeholder-baskets" src="img/si-icon.png">
+    	<img id="placeholder-icon" src="img/si-icon.png">
 
 
     </a-assets>
@@ -50,34 +50,32 @@ ASSETS for gallery
 
 <!--LIGHTS-->
 <!--<a-entity light="type: point; intensity: 1.5; distance: 35; decay: 2" position="0 15 -3"></a-entity>-->
-<a-entity light="type: ambient; color: #CCC; intensity: 0.2"></a-entity>
+<a-entity light="type: ambient; color: #CCC; intensity: 0.5"></a-entity>
 
 
 <!--...................................
-HALL OF BASKETS
+HALL OF --
 ...................................-->
 
-<!--Gallery Model-->
+<!--Gallery Model
 <a-gltf-model src="#galleries" scale="2 2 2" position="0 0 0" rotation="0 0 0"></a-gltf-model>
+-->
 
 <!--artist statement-->
-<a-entity bmfont-text="text: Artist Statement lorem ipsum etc etc; align: center; color: #ffffff; width: 320;" position="-0.4 0.5 -3" scale="0.5 0.5 0.5" rotation="-90 0 0"></a-entity>
+<a-entity bmfont-text="text: Artist Statement lorem ipsum etc etc; align: center; color: #ffffff; width: 320;" position="0 0.5 -3" scale="1 1 1" rotation="-90 0 0"></a-entity>
 
 
 <!--image of art piece example-->
 <a-entity class="rotate-art" position="0 0 -3.5" rotation="0 0 0">
 	<a-image src="#art-1" width="1" height="1" position="0 1.5 -4"></a-image>
-	<a-entity bmfont-text="text: Soft VHS Plants vaccuformed plastic, VHS tape,  2007; align: center; color: #ffffff; width: 320;" position="-0.4 0.6 -2" scale="0.5 0.5 0.5"></a-entity>
+	<a-entity bmfont-text="text: Soft VHS Plants vaccuformed plastic, VHS tape, 2007; align: center; color: #ffffff; width: 320;" position="-0.4 0.6 -2" scale="0.5 0.5 0.5"></a-entity>
 </a-entity>
-
-
-
 
 
 <!--Traversable link to home page-->
 <a-entity class="collidable" position="0 0 -1" rotation="0 0 0">
-	<a-entity bmfont-text="text: Return Home; align: center; color: #ffffff; width: 320;" position="-0.4 2 -4" rotation="0 0 0" scale="0.5 0.5 0.5"></a-entity>
-	<a-box href="si-pages/baskets-gallery.html" material="src: #carnival-globe-trees" depth="0.2" height="2" width="2" position="0 1 -6"></a-box>
+	<a-entity bmfont-text="text: Return Home; align: center; color: #ffffff; width: 320;" position="0 2 -4" rotation="0 0 0" scale="0.5 0.5 0.5"></a-entity>
+	<a-box href="index.html" material="src: #placeholder-icon" depth="0.2" height="2" width="2" position="0 1 -6"></a-box>
 </a-entity>
 
 
