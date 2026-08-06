@@ -45,7 +45,9 @@ ASSETS for landing page
 
 <!--CAMERA-->
 
-    <a-entity camera="active: true" look-controls wasd-controls position="0 1.6 0" data-aframe-default-camera></a-entity>
+    <a-entity camera="active: true" look-controls wasd-controls position="0 1.6 0" data-aframe-default-camera>
+      <a-cursor="rayOrigin: mouse; mouseCursorStylesEnabled: true; showLine: true; far: 5; interval: 1000; objects: .clickable"></a-cursor>
+    </a-entity>
 
 
 <!--LIGHTS-->
@@ -87,10 +89,6 @@ Links to Galleries
 	<a-entity bmfont-text="text:Hair Textiles;width:200;align:center;lineHeight:36;color:#ffffff;opacity:1" position="-0.5 1.6 0" rotation="0 0 0" scale="1 1 1"></a-entity>
 	<a-box href="si-pages/baskets-gallery.html" material="src: #placeholder-hair-textiles" depth="0.1" height="1" width="1" position="0 1 0"></a-box>
 </a-entity>
-
-
-<!--CURSOR-->
-<a-entity cursor="rayOrigin: mouse; mouseCursorStylesEnabled: true; showLine: true; far: 5; interval: 1000; objects: .clickable"></a-entity>
 
 
     </a-scene>
