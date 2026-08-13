@@ -44,9 +44,11 @@ ASSETS for landing page
   	<a-sky color="#425D70"></a-sky>
 
 <!--CAMERA-->
-    <a-entity camera="active: true" look-controls wasd-controls position="0 1.6 0" data-aframe-default-camera>
-      <!--<a-cursor="rayOrigin: mouse; mouseCursorStylesEnabled: true; showLine: true; far: 5; interval: 1000; objects: .clickable"></a-cursor> -->
-      <a-ring cursor="fuse:false" raycaster="objects: .collidable; far: 4.5; near: 1; interval: 1000" class="reticle-cursor" opacity="0.5" color="#E812CE"  radius-outer="0.01" radius-inner="0.008" position="0 0 -1"></a-ring>
+    <a-entity position="0 0 -3" rotation="0 0 0">
+        <a-camera id="camera" look-controls wasd-controls>
+          <a-ring cursor="fuse:false" raycaster="objects: .collidable; far: 4.5; near: 1; interval: 1000" class="reticle-cursor" opacity="0.5" color="#E812CE"  radius-outer="0.01" radius-inner="0.008" position="0 0 -1">
+          </a-ring>
+        </a-camera>
     </a-entity>
 
 <!--LIGHTS-->
