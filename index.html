@@ -44,7 +44,7 @@ ASSETS for landing page
   	<a-sky color="#425D70"></a-sky>
 
 <!--CAMERA-->
-    <a-entity position="0 0 -3" rotation="0 0 0">
+    <a-entity position="0 1.6 0" rotation="0 0 0">
         <a-camera id="camera" look-controls wasd-controls>
           <a-ring cursor="fuse:false" raycaster="objects: .collidable; far: 4.5; near: 1; interval: 1000" class="reticle-cursor" opacity="0.5" color="#E812CE"  radius-outer="0.01" radius-inner="0.008" position="0 0 -1">
           </a-ring>
@@ -58,10 +58,6 @@ ASSETS for landing page
 
 <!--GROUND PLANE-->
 <a-plane color="#276B46" height="100" width="100" rotation="-90 0 0" position="0 0 0"></a-plane>
-
-<!-- not sure what this was for: maybe blocking accidental clicks on links in back gallery??-->
-<a-torus class="raycast-blocker" color="#0092FF" opacity="0" scale="4 2 4" rotation="90 0 0" position="0 1 -53"></a-torus>
-
 
 <!--..................................
 LANDING PAGE CONTENT
@@ -84,20 +80,20 @@ BIO AND INFO: 2d page? on wall near entrance?
 Links to Galleries
 ...................................-->
 <!--Traversable link to gallery page: baskets-->
-<a-entity class="clickable" position="0 0 -3" rotation="0 0 0" animation__mouseenter="property: scale; startEvents: mouseenter; easing: easeInCubic; dur: 500; to: 1.1 1.1 1.1" animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: 1 1 1">
-	<a-entity bmfont-text="text:Baskets;width:200;align:center;lineHeight:36;color:#ffffff;opacity:1" position="-1.5 1.6 -3" rotation="0 0 0" scale="1 1 1"></a-entity>
+<a-entity class="clickable" position="-2 0 -3" rotation="0 0 0" animation__mouseenter="property: scale; startEvents: mouseenter; easing: easeInCubic; dur: 500; to: 1.5 1.5 1.5" animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: 1 1 1">
+	<a-entity bmfont-text="text:Baskets;width:200;align:center;lineHeight:36;color:#ffffff;opacity:1" position="0 1.6 0" rotation="0 0 0" scale="1 1 1"></a-entity>
 	<a-box href="si-pages/baskets-gallery.html" material="src: #placeholder-baskets" depth="0.1" height="1" width="1" position="0 1 0"></a-box>
 </a-entity>
 
 <!--Traversable link to gallery page: hair-textiles-->
-<a-entity class="clickable" position="0 0 -3" rotation="0 0 0" animation__mouseenter="property: scale; startEvents: mouseenter; easing: easeInCubic; dur: 500; to: 1.1 1.1 1.1" animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: 1 1 1">
-	<a-entity bmfont-text="text:Hair Textiles;width:200;align:center;lineHeight:36;color:#ffffff;opacity:1" position="0 1.6 -3" rotation="0 0 0" scale="1 1 1"></a-entity>
+<a-entity class="clickable" position="0 0 -3" rotation="0 0 0" animation__mouseenter="property: scale; startEvents: mouseenter; easing: easeInCubic; dur: 500; to: 1.5 1.5 1.5" animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: 1 1 1">
+	<a-entity bmfont-text="text:Hair Textiles;width:200;align:center;lineHeight:36;color:#ffffff;opacity:1" position="0 1.6 0" rotation="0 0 0" scale="1 1 1"></a-entity>
 	<a-box href="si-pages/hair-textiles-gallery.html" material="src: #placeholder-hair-textiles" depth="0.1" height="1" width="1" position="0 1 0"></a-box>
 </a-entity>
 
 <!--Traversable link to gallery page: paintings-->
-<a-entity class="clickable" position="0 0 -3" rotation="0 0 0" animation__mouseenter="property: scale; startEvents: mouseenter; easing: easeInCubic; dur: 500; to: 1.1 1.1 1.1" animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: 1 1 1">
-	<a-entity bmfont-text="Paintings;width:200;align:center;lineHeight:36;color:#ffffff;opacity:1" position="1.5 1.6 -3" rotation="0 0 0" scale="1 1 1"></a-entity>
+<a-entity class="clickable" position="2 0 -3" rotation="0 0 0" animation__mouseenter="property: scale; startEvents: mouseenter; easing: easeInCubic; dur: 500; to: 1.5 1.5 1.5" animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: 1 1 1">
+	<a-entity bmfont-text="Paintings;width:200;align:center;lineHeight:36;color:#ffffff;opacity:1" position="0 1.6 0" rotation="0 0 0" scale="1 1 1"></a-entity>
 	<a-box href="si-pages/paintings-gallery.html" material="src: #placeholder-paintings" depth="0.1" height="1" width="1" position="0 1 0"></a-box>
 </a-entity>
 
